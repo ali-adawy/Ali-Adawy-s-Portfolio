@@ -37,6 +37,7 @@ header {
 
 .hero .content {
     max-width: 50%;
+    padding-right: 30px; /* Pushes the title and description to the right */
 }
 
 .hero h1 {
@@ -63,10 +64,15 @@ header {
     border: 2px solid #007BFF;
 }
 
+.hero .hero-image {
+    margin-left: -20px; /* Moves the image slightly to the left */
+}
+
 .hero .hero-image img {
     max-width: 300px;
     border-radius: 50%;
     border: 5px solid #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Section Styles */
@@ -129,6 +135,19 @@ section h2 {
 
 /* Ensure responsiveness */
 @media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .content {
+        padding-right: 0;
+    }
+
+    .hero .hero-image {
+        margin-left: 0;
+    }
+
     .project {
         flex-direction: column;
         text-align: center;
